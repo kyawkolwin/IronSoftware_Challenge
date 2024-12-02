@@ -115,9 +115,9 @@ namespace IronSoftware_Challenge
                     }
                     else
                     {
+                        iSameNumberCount = 0;
                         sTextResult += keyPadCharacter[Convert.ToInt32(sCurrentNumber) - 1][iSameNumberCount].ToString();
                         sPreviousNumber = sCurrentNumber;
-                        iSameNumberCount = 0;
                     }
                 }
             }
