@@ -35,9 +35,10 @@ namespace IronSoftware_Challenge
         public frmoldMobilekeypad()
         {
             InitializeComponent();
+            oldPhonePad("");
         }
 
-        private void btn_Click(object sender, EventArgs e) //Button Click Event For 1 - 9
+        public void btn_Click(object sender, EventArgs e) //Button Click Event For 1 - 9
         {
             if (sender.ToString() == "System.Windows.Forms.Button, Text: 1\r\n& (") // Assign Button Number Into Variable
             {
@@ -84,7 +85,7 @@ namespace IronSoftware_Challenge
           
         }
 
-        private string oldPhonePad(string sInput) 
+        public string oldPhonePad(string sInput) 
         {
             string sTextResult = "";
             int iSameNumberCount = 0; 
@@ -126,7 +127,7 @@ namespace IronSoftware_Challenge
             return sTextResult;
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        public void btnClear_Click(object sender, EventArgs e)
         {
             lblDisplay.Text = "";
             sCurrentNumber = "";
